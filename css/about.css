@@ -1,0 +1,28 @@
+.about-content{
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    background:transparent;
+    padding: 5%;
+    margin-top: 7%;
+    
+}
+
+.about-content h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.about-content p{
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+
+.about-content{
+    color: white;
+}

@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+
+}
+.logo a{
+    color: white;
+}
+
+.logo span {
+    color: aqua;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
+.navbar ul li::after {
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.search-bar {
+    width: 45%;
+    height: 2.5rem;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-top: 7%;
+    background-color: #009688;
+    margin-left: 25%;
+    border-radius: 25px;
+    overflow: hidden;
+    border: #009688;
+}
+
+.search-input {
+    width: 85%;
+    height: 100%;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    background-color: whitesmoke;
+}
+
+.search-btn {
+    background: transparent;
+    background-color: #009688;
+    color: rgb(247, 247, 169);
+    font-size: 1.1rem;
+    border: none;
+    margin-left: 2%;
+    cursor: pointer;
+    height: 100%;
+
+}
+
+.search-btn:hover {
+    /* background-color: white; */
+    color: black;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 40px;
+    /* margin-top: 80px; */
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+
+.btn {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    width: 100%;
+}
+
+.btn:hover {
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
